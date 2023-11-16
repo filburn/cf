@@ -2,7 +2,7 @@
   export let date:string;
   export let titles:string[];
   export let company:string;
-  export let description:string;
+  export let description:string = "";
   export let bullets:string[];
   export let skills:string[];
 </script>

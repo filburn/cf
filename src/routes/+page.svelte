@@ -1,31 +1,70 @@
 <script>
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
+	import Experience from './Experience.svelte';
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>Caleb Filburn - Designer + Software Engineer</title>
+	<meta name="description" content="Designer and software engineer with 10+ years of experience creating products and building teams." />
 </svelte:head>
 
-<section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
+<section class="experience">
+	<h1 class="sr-only">Experience</h1>
+	<ul>
+		<Experience 
+			date="March 2020—August 2023"
+			titles={["Software Engineer", "UX Engineer"]}
+			company="ISACA"
+			description="Designed, developed, and maintained codebase for enterprise software applications. Led meetings and presentations, mentored new hires, and reported project status to stakeholders."
+			bullets={[
+				"Designed, managed, and maintained company design system and all frontend components (React)", 
+				"Set up software logging and reduced application errors by 80%",
+				"Created an onboarding process resulting in estimated 50% reduction in training time",
+				"Mentored new hires and provided team members with training on Kentico CMS and enterprise systems",
+				"Directed technical integration of FormAssembly with Sitecore and Salesforce",
+				"Designed SSO experience and led Scrum ceremonies for multiple teams"
+			]}
+			skills={["Design Systems", "React", "Angular", ".NET", "Azure", "Figma", "Kentico", "Sitecore", "Salesforce", "Scrum"]}
+		/>
 
-		to your new<br />SvelteKit app
-	</h1>
+		<Experience 
+			date="July 2018—March 2020"
+			titles={["Frontend Developer"]}
+			company="CMMI Institute"
+			bullets={[
+				"Created and maintained company design system used internally and by vendors (React)",
+				"Established SLA between marketing and technology departments, reducing time to resolution by ~50%",
+				"Performed A/B testing, card sorting, and user interviews",
+				"Deployed Jira Service Desk and promoted its adoption, increasing collaboration and project delivery speed"
+			]}
+			skills={["Design Systems", "React", "Figma", "Kentico", "Scrum"]}
+		/>
 
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
+		<Experience 
+			date="June 2016—July 2018"
+			titles={["Web Team Director"]}
+			company="Em-Media"
+			bullets={[
+				"Designed and developed WordPress and HubSpot websites for clients in agency environment",
+				"Provided DevOps for 30+ websites, UX design, digital design, and ad placement",
+				"Supervised team of up to 5 contractors and interns",
+				"Managed resources and timelines of multiple simultaneous projects"
+			]}
+			skills={["software", "design", "etc"]}
+		/>
 
-	<Counter />
+		<Experience 
+			date="March 2013—June 2016"
+			titles={["Web Designer, Partner"]}
+			company="Chiselbox"
+			bullets={[
+				"Co-founded boutique web and creative agency",
+				"Guided new business development, business strategy, and financial decisions",
+				"Supervised website development and provided creative direction in fast-paced startup environment",
+				"Created web components, identity systems, and branding assets for 20+ clients"
+			]}
+			skills={["software", "design", "etc"]}
+		/>
+	</ul>
 </section>
 
 <style>
@@ -39,21 +78,5 @@
 
 	h1 {
 		width: 100%;
-	}
-
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
 	}
 </style>
