@@ -4,7 +4,11 @@
 </script>
 
 <div class="app">
-	<Header />
+	<Header
+		name="Caleb Filburn"
+		title="Designer + Software Engineer"
+		description="I’m a digital product expert who loves design, development, and empowering collaborative teams to craft exceptional products."
+	/>
 
 	<main>
 		<slot />
