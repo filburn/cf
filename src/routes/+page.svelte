@@ -1,5 +1,7 @@
 <script>
 	import Experience from './Experience.svelte';
+	import Projects from './Projects.svelte';
+	import logo from '$lib/images/svelte-logo.svg';
 </script>
 
 <svelte:head>
@@ -63,6 +65,19 @@
 				"Created web components, identity systems, and branding assets for 20+ clients"
 			]}
 			skills={["software", "design", "etc"]}
+		/>
+	</ul>
+</section>
+
+<section class="projects">
+	<h1 class="sr-only">Projects</h1>
+	<ul>
+		<Projects
+			img={logo}
+			alt=""
+			title=""
+			description=""
+			tech={[""]}
 		/>
 	</ul>
 </section>
