@@ -68,7 +68,7 @@
 		transform-origin: 0 50%;
 		animation: coverElement auto linear;
 		animation-timeline: scroll();
-		animation-range-end: exit 70%;
+		animation-range-end: exit 30%;
 	}
 
 </style>

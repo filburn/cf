@@ -1,7 +1,9 @@
 <script>
 	import Experience from './Experience.svelte';
 	import Projects from './Projects.svelte';
-	import logo from '$lib/images/svelte-logo.svg';
+	import cmmi from '$lib/images/cmmi-design-thumb.png';
+	import isaca from '$lib/images/isaca-design-thumb.png';
+	import Separator from './Separator.svelte';
 </script>
 
 <svelte:head>
@@ -16,9 +18,9 @@
 			date="March 2020—August 2023"
 			titles={["Software Engineer", "UX Engineer"]}
 			company="ISACA"
-			description="Designed, developed, and maintained codebase for enterprise software applications. Led meetings and presentations, mentored new hires, and reported project status to stakeholders."
+			description="Designed, developed, and maintained codebase for design system and enterprise software applications. Led meetings and presentations, mentored new hires, and reported project status to stakeholders."
 			bullets={[
-				"Designed, managed, and maintained company design system and all frontend components (React)", 
+				"Built, deployed, and managed design system resulting in 30% greater development efficiency", 
 				"Set up software logging and reduced application errors by 80%",
 				"Created an onboarding process resulting in estimated 50% reduction in training time",
 				"Mentored new hires and provided team members with training on Kentico CMS and enterprise systems",
@@ -69,16 +71,27 @@
 	</ul>
 </section>
 
+<Separator />
+
 <section class="projects">
 	<h1 class="sr-only">Projects</h1>
 	<ul>
 		<Projects
-			img={logo}
-			alt=""
-			title=""
-			description=""
-			tech={[""]}
+			img={cmmi}
+			alt="a screenshot of the CMMI Institute design system"
+			title="CMMI Institute Design System"
+			description={["Design system.",
+			"Every artifact has a sample HTML snippet that can be used to quickly add it to a page. When an update to a component or style is needed, changing it in the design system will update it everywhere else."]}
+			tech={["React", "that", "something else"]}
 		/>
+		<Projects
+		img={isaca}
+		alt="a screenshot of the ISACA design operations framework"
+		title="ISACA Design Operations Framework"
+		description={["Design system.",
+		"Every artifact has a sample HTML snippet that can be used to quickly add it to a page. When an update to a component or style is needed, changing it in the design system will update it everywhere else."]}
+		tech={["React", "that", "something else"]}
+	/>
 	</ul>
 </section>
 
