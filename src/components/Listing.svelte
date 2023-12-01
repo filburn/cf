@@ -24,7 +24,7 @@
             <span>{jobTitles[i+1]}</span>
           {/each}
         {/if}
-      {:else if jobTitles.length = 0 && projectTitle != ''}
+      {:else if jobTitles.length == 0 && projectTitle != ''}
         <h3>{projectTitle}</h3>
       {/if}
       {#if description}
@@ -59,9 +59,14 @@
       background: rgba(5, 70, 116, 0.5);
     }
 
-    time {
+    time,
+    img {
       flex: 1;
       padding-right: 1em;
+      min-width: calc(25% - 1em);
+      max-width: 100%;
+      height: 100%;
+      overflow: auto;
     }
 
     div {
@@ -75,7 +80,7 @@
     span {
     display: block;
     opacity: 0.6;
-    margin: 1rem 0;
+    margin: -0.5rem 0 1rem 0;
     font-weight: 700;
     font-size: 1.17rem;
     }
