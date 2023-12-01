@@ -33,8 +33,8 @@
       padding-right: 1em;
       min-width: calc(25% - 1em);
       max-width: 100%;
-      overflow: auto;
       height: 100%;
+      overflow: auto;
     }
 
     div {
@@ -45,14 +45,6 @@
     h3 {
       margin-top: 0;
     }
-
-    span {
-    display: block;
-    opacity: 0.6;
-    font-size: 1.17rem;
-    font-weight: 700;
-    margin: 1rem 0;
-    }
   }
 
   .tech {
@@ -60,12 +52,12 @@
       flex-wrap: wrap;
 
       li {
-        font-size: 0.75rem;
-        color: rgb(var(--color-theme-1));
+        margin: 0 0.25rem 0.25rem 0;
+        border-radius: 10px;
         background-color: rgb(var(--color-bg-2));
         padding: 0.25rem 0.5rem;
-        border-radius: 10px;
-        margin: 0 0.25rem 0.25rem 0;
+        color: rgb(var(--color-theme-1));
+        font-size: 0.75rem;
       }
     }
 </style>

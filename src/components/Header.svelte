@@ -61,39 +61,38 @@
 
 	.grid {
 
-		&:after { 
-			mask-image: gradient(linear, left 90%, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+		&:after {
 			-webkit-mask-image: -webkit-gradient(linear, left 90%, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-			transform: perspective(400px) rotateX(40deg) scale(2,1) translateZ(0);
-			content: "";
+			-webkit-background-clip: content-box;
+			-webkit-backface-visibility: hidden;
 			display: block;
 			position: absolute;
+			right: 0;
 			bottom: 0;
 			left: 0;
-			right: 0;
-			width: 100%;
-			height: 100vh;
-			padding: 1px; 
-			z-index: -1;
-			background-clip: content-box;
-			-webkit-background-clip: content-box; 
-			backface-visibility: hidden;
-			-webkit-backface-visibility: hidden;
+			transform: perspective(400px) rotateX(40deg) scale(2,1) translateZ(0);
+			transform-origin: bottom center; 
+			z-index: -1; 
+			backface-visibility: hidden; 
+			mask-image: gradient(linear, left 90%, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+			will-change: transform;
 			outline: 1px solid transparent;
-			transform-origin: bottom center;
-			will-change: transform; 
-
-			background-position: center bottom;
-			background-size: 40px 40px;
 			background-image: 
 			linear-gradient(to right, rgb(var(--color-theme-2)) 2px, transparent 2px), 
-			linear-gradient(to bottom, rgb(var(--color-theme-2)) 1px, transparent 2px);
+			linear-gradient(to bottom, rgb(var(--color-theme-2)) 1px, transparent 2px); 
+			background-position: center bottom;
+			background-size: 40px 40px;
+			background-clip: content-box;
+			padding: 1px;
+			width: 100%;
+			height: 100vh;
+			content: "";
 		}
 	}
 
 	@keyframes coverElement {
-  from { opacity: (0); }
-  to { opacity: (1); }
+		from { opacity: (0); }
+		to { opacity: (1); }
 	}
 
 	#cover {
@@ -104,7 +103,7 @@
 		transform-origin: 0 50%;
 		animation: coverElement auto linear;
 		animation-timeline: scroll();
-		animation-range-end: exit 30%;
+		animation-range: 0 exit 80%;
 	}
 
 </style>

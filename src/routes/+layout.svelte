@@ -1,6 +1,6 @@
 <script>
-	import Header from './Header.svelte';
-	import Footer from './Footer.svelte';
+	import Header from '$components/Header.svelte';
+	import Footer from '$components/Footer.svelte';
 	import './styles.scss';
 </script>
 
@@ -26,13 +26,13 @@
 	}
 
 	main {
-		flex: 1;
 		display: flex;
+		flex: 1;
 		flex-direction: column;
+		box-sizing: border-box;
+		margin: 0 auto;
 		padding: 1rem;
 		width: 100%;
 		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
 	}
 </style>

@@ -1,10 +1,9 @@
 <script>
-	import Experience from './Experience.svelte';
-	import Projects from './Projects.svelte';
+	import Experience from '$components/Experience.svelte';
+	import Projects from '$components/Projects.svelte';
 	import cmmi from '$lib/images/cmmi-design-thumb.png';
 	import isaca from '$lib/images/isaca-design-thumb.png';
-	import Separator from './Separator.svelte';
-	import SectionLink from './SectionLink.svelte';
+	import SectionLink from '$components/SectionLink.svelte';
 </script>
 
 <svelte:head>

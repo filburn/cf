@@ -3,7 +3,7 @@
   export let link:string="#";
 </script>
 
-
+<div class="spacer"></div>
 <a href="{link}" class="section-link">
   {text}
   <svg viewBox="0 0 20 20">
@@ -12,21 +12,25 @@
 </a>
 
 <style lang="scss">
+.spacer {
+  flex: 1
+}
 .section-link {
-  font-size: 1.17rem;
   display: inline-flex;
+  flex: 3;
   align-items: center;
   transition: cubic-bezier(0.3, 0, .3, 1) 0.15s text-decoration;
+	font-weight: 700;
+  font-size: 1.17rem;
   text-decoration: underline;
 	text-decoration-color: transparent;
 	text-underline-offset: .33rem;
-	font-weight: 700;
 
   svg {
-    width: 20px;
-    line-height: 20px;
     transition: cubic-bezier(0.3, 0, .3, 1) 0.15s transform;
     margin-left: 3px;
+    width: 20px;
+    line-height: 20px;
   }
   
   &:hover {
