@@ -10,11 +10,11 @@
 	--color-theme-1: 18, 202, 181;
 	--color-theme-2: 240, 2, 141;
 	--color-theme-3: 138, 39, 141;
-	--color-text: rgba(213, 220, 237, 0.9);
+	--color-text: 213, 220, 237;
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
 	font-family: var(--font-body);
-	color: var(--color-text);
+	color: rgba(var(--color-text), 0.9);
 }
 
 body {
@@ -45,16 +45,17 @@ p {
 }
 
 a {
-	color: rgb(var(--color-theme-1));
-	text-decoration: none;
+	text-decoration: underline;
+	text-decoration-color: transparent;
+	text-underline-offset: .33rem;
+	font-weight: 700;
+	color: rgba(var(--color-text), 0.9);
+	cursor: pointer; 
 }
 
 a:hover {
 	text-decoration: underline;
-}
-
-.section-link {
-	
+	text-decoration-color: rgb(var(--color-theme-2));
 }
 
 h1 {
@@ -83,7 +84,7 @@ pre {
 	box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
 	padding: 0.5em;
 	overflow-x: auto;
-	color: var(--color-text);
+	color: rgba(var(--color-text), 0.9);
 }
 
 .text-column {

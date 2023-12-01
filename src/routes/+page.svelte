@@ -4,6 +4,7 @@
 	import cmmi from '$lib/images/cmmi-design-thumb.png';
 	import isaca from '$lib/images/isaca-design-thumb.png';
 	import Separator from './Separator.svelte';
+	import SectionLink from './SectionLink.svelte';
 </script>
 
 <svelte:head>
@@ -51,9 +52,10 @@
 			skills={["software", "design", "etc"]}
 		/>
 	</ul>
-	<a class="section-link">
-		See full resume
-	</a>
+	<SectionLink
+		text="See full resume"
+		link="#"
+	/>
 </section>
 
 <section class="projects">
@@ -78,12 +80,33 @@
 	</ul>
 </section>
 
-<style>
+<style lang="scss">
 	section {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		flex: 0.6;
+	}
+
+	.section-link {
+		font-size: 1.17rem;
+		display: inline-flex;
+		align-items: center;
+		transition: cubic-bezier(0.3, 0, .3, 1) 0.15s text-decoration;
+
+		svg {
+			width: 20px;
+			line-height: 20px;
+			transition: cubic-bezier(0.3, 0, .3, 1) 0.15s transform;
+			margin-left: 3px;
+		}
+		
+		&:hover {
+
+			svg {
+				transform: translate(5px);
+				}
+			}
 	}
 
 	h1 {
