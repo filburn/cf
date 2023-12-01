@@ -51,10 +51,12 @@
 			skills={["software", "design", "etc"]}
 		/>
 	</ul>
+
 	<SectionLink
 		text="See full resume"
 		link="#"
 	/>
+	
 </section>
 
 <section class="projects">

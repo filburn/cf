@@ -26,7 +26,14 @@
 <style lang="scss">
   li {
     display: flex;
+    transition: cubic-bezier(0.3, 0, .3, 1) 0.15s all;
+    border-radius: 1rem;
+    padding: 1rem;
     font-size: 0.875rem;
+
+    &:hover {
+      background: rgba(5, 70, 116, 0.5);
+    }
 
     img {
       flex: 1;
@@ -48,16 +55,17 @@
   }
 
   .tech {
-      display: flex;
-      flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
 
-      li {
-        margin: 0 0.25rem 0.25rem 0;
-        border-radius: 10px;
-        background-color: rgb(var(--color-bg-2));
-        padding: 0.25rem 0.5rem;
-        color: rgb(var(--color-theme-1));
-        font-size: 0.75rem;
-      }
+    li {
+      margin: 0 0.25rem 0.25rem 0;
+      border-radius: 10px;
+      background-color: rgb(var(--color-bg-2));
+      padding: 0.25rem 0.5rem;
+      color: rgb(var(--color-theme-1));
+      font-size: 0.75rem;
     }
+  }
 </style>
