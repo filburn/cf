@@ -61,8 +61,8 @@
 
       li {
         font-size: 0.75rem;
-        color: var(--color-theme-1);
-        background-color: var(--color-bg-2);
+        color: rgb(var(--color-theme-1));
+        background-color: rgb(var(--color-bg-2));
         padding: 0.25rem 0.5rem;
         border-radius: 10px;
         margin: 0 0.25rem 0.25rem 0;

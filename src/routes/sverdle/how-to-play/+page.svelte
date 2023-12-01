@@ -65,11 +65,11 @@
 
 	.close {
 		border-style: solid;
-		border-color: var(--color-theme-2);
+		border-color: rgb(var(--color-theme-2));
 	}
 
 	.exact {
-		background: var(--color-theme-2);
+		background: rgb(var(--color-theme-2));
 		color: white;
 	}
 

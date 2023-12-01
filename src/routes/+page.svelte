@@ -18,15 +18,7 @@
 			date="March 2020—August 2023"
 			titles={["Software Engineer", "UX Engineer"]}
 			company="ISACA"
-			description="Designed, developed, and maintained codebase for design system and enterprise software applications. Led meetings and presentations, mentored new hires, and reported project status to stakeholders."
-			bullets={[
-				"Built, deployed, and managed design system resulting in 30% greater development efficiency", 
-				"Set up software logging and reduced application errors by 80%",
-				"Created an onboarding process resulting in estimated 50% reduction in training time",
-				"Mentored new hires and provided team members with training on Kentico CMS and enterprise systems",
-				"Directed technical integration of FormAssembly with Sitecore and Salesforce",
-				"Designed SSO experience and led Scrum ceremonies for multiple teams"
-			]}
+			description="Designed and developed design system components. Delivered high-quality production code for enterprise software applications. Performed user interviews and qualitative data analysis. Led meetings and presentations, mentored new hires, and reported project status to stakeholders."
 			skills={["Design Systems", "React", "Angular", ".NET", "Azure", "Figma", "Kentico", "Sitecore", "Salesforce", "Scrum"]}
 		/>
 
@@ -34,12 +26,7 @@
 			date="July 2018—March 2020"
 			titles={["Frontend Developer"]}
 			company="CMMI Institute"
-			bullets={[
-				"Created and maintained company design system used internally and by vendors (React)",
-				"Established SLA between marketing and technology departments, reducing time to resolution by ~50%",
-				"Performed A/B testing, card sorting, and user interviews",
-				"Deployed Jira Service Desk and promoted its adoption, increasing collaboration and project delivery speed"
-			]}
+			description="Developed new components for company design system. Performed A/B testing, card sorting, and user interviews. Maintained codebase for a suite of B2B applications."
 			skills={["Design Systems", "React", "Figma", "Kentico", "Scrum"]}
 		/>
 

@@ -3,7 +3,7 @@
   export let titles:string[];
   export let company:string;
   export let description:string = "";
-  export let bullets:string[];
+  export let bullets:string[] = [];
   export let skills:string[];
 </script>
 
@@ -38,6 +38,13 @@
     li {
       display: flex;
       font-size: 0.875rem;
+      border-radius: 1rem;
+      transition: cubic-bezier(0.3, 0, .3, 1) 0.15s all;
+      padding: 1rem;
+      
+      &:hover {
+        background: rgba(5, 70, 116, 0.5);
+      }
 
       time {
         flex: 1;
@@ -65,6 +72,7 @@
       li {
         display: list-item;
         list-style-type: disc;
+        background: none;
       }
     }
 
@@ -74,8 +82,8 @@
 
       li {
         font-size: 0.75rem;
-        color: var(--color-theme-1);
-        background-color: var(--color-bg-2);
+        color: rgb(var(--color-theme-1));
+        background-color: rgb(var(--color-bg-2));
         padding: 0.25rem 0.5rem;
         border-radius: 10px;
         margin: 0 0.25rem 0.25rem 0;
