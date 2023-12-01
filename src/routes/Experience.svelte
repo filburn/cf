@@ -73,12 +73,14 @@
         display: list-item;
         list-style-type: disc;
         background: none;
+        padding: 0;
       }
     }
 
     .skills {
       display: flex;
       flex-wrap: wrap;
+      margin: 0;
 
       li {
         font-size: 0.75rem;

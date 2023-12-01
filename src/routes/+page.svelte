@@ -27,19 +27,14 @@
 			titles={["Frontend Developer"]}
 			company="CMMI Institute"
 			description="Developed new components for company design system. Performed A/B testing, card sorting, and user interviews. Maintained codebase for a suite of B2B applications."
-			skills={["Design Systems", "React", "Figma", "Kentico", "Scrum"]}
+			skills={["Design Systems", "JavaScript", "React", "Figma", "Kentico", "Scrum"]}
 		/>
 
 		<Experience 
 			date="June 2016—July 2018"
 			titles={["Web Team Director"]}
 			company="Em-Media"
-			bullets={[
-				"Designed and developed WordPress and HubSpot websites for clients in agency environment",
-				"Provided DevOps for 30+ websites, UX design, digital design, and ad placement",
-				"Supervised team of up to 5 contractors and interns",
-				"Managed resources and timelines of multiple simultaneous projects"
-			]}
+			description=""
 			skills={["software", "design", "etc"]}
 		/>
 
@@ -56,9 +51,10 @@
 			skills={["software", "design", "etc"]}
 		/>
 	</ul>
+	<a class="section-link">
+		See full resume
+	</a>
 </section>
-
-<Separator />
 
 <section class="projects">
 	<h1 class="sr-only">Projects</h1>
@@ -87,7 +83,6 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;
 		flex: 0.6;
 	}
 

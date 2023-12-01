@@ -53,6 +53,10 @@ a:hover {
 	text-decoration: underline;
 }
 
+.section-link {
+	
+}
+
 h1 {
 	font-size: 3rem;
 	font-weight: 700;
@@ -95,6 +99,15 @@ input,
 button {
 	font-size: inherit;
 	font-family: inherit;
+}
+
+.button {
+	background: rgb(var(--color-bg-2));
+	border-radius: 0.5rem;
+
+	&:hover {
+		background: rgb(var(--color-theme-1));
+	}
 }
 
 ul, ol {
