@@ -88,27 +88,6 @@
 		flex: 0.6;
 	}
 
-	.section-link {
-		font-size: 1.17rem;
-		display: inline-flex;
-		align-items: center;
-		transition: cubic-bezier(0.3, 0, .3, 1) 0.15s text-decoration;
-
-		svg {
-			width: 20px;
-			line-height: 20px;
-			transition: cubic-bezier(0.3, 0, .3, 1) 0.15s transform;
-			margin-left: 3px;
-		}
-		
-		&:hover {
-
-			svg {
-				transform: translate(5px);
-				}
-			}
-	}
-
 	h1 {
 		width: 100%;
 	}

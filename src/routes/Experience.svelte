@@ -74,6 +74,7 @@
         list-style-type: disc;
         background: none;
         padding: 0;
+        margin: 0.5rem 0;
       }
     }
 

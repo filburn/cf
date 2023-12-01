@@ -17,6 +17,10 @@
   display: inline-flex;
   align-items: center;
   transition: cubic-bezier(0.3, 0, .3, 1) 0.15s text-decoration;
+  text-decoration: underline;
+	text-decoration-color: transparent;
+	text-underline-offset: .33rem;
+	font-weight: 700;
 
   svg {
     width: 20px;
@@ -26,6 +30,8 @@
   }
   
   &:hover {
+    text-decoration: underline;
+	  text-decoration-color: rgb(var(--color-theme-2));
 
     svg {
       transform: translate(5px);

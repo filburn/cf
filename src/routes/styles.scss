@@ -45,10 +45,6 @@ p {
 }
 
 a {
-	text-decoration: underline;
-	text-decoration-color: transparent;
-	text-underline-offset: .33rem;
-	font-weight: 700;
 	color: rgba(var(--color-text), 0.9);
 	cursor: pointer; 
 }
