@@ -14,23 +14,26 @@
 	<h1 class="sr-only">Experience</h1>
 	<ul>
 		<Listing 
-			date="March 2020—August 2023"
+			startDate="March 2020"
+			endDate="August 2023"
 			jobTitles={["Software Engineer", "UX Engineer"]}
 			company="ISACA"
 			description={["Designed and developed design system components. Delivered high-quality production code for enterprise software applications. Performed user interviews and qualitative data analysis. Led meetings and presentations, mentored new hires, and reported project status to stakeholders."]}
-			tags={["Design Systems", "React", "Angular", ".NET", "Azure", "Figma", "Kentico", "Sitecore", "Salesforce", "Scrum"]}
+			tags={["React", "Angular", ".NET", "Azure", "SQL", "Figma", "Kentico", "Sitecore", "Salesforce", "Scrum"]}
 		/>
 
 		<Listing 
-			date="July 2018—March 2020"
+			startDate="July 2018"
+			endDate="March 2020"
 			jobTitles={["Frontend Developer"]}
 			company="CMMI Institute"
 			description={["Developed new components for company design system. Performed A/B testing, card sorting, and user interviews. Maintained codebase for a suite of B2B applications."]}
-			tags={["Design Systems", "JavaScript", "React", "Figma", "Kentico", "Scrum"]}
+			tags={["JavaScript", "React", ".NET", "SQL", "Figma", "Kentico", "Scrum"]}
 		/>
 
 		<Listing 
-			date="June 2016—July 2018"
+			startDate="June 2016"
+			endDate="July 2018"
 			jobTitles={["Web Team Director"]}
 			company="Em-Media"
 			description={[""]}
@@ -38,7 +41,8 @@
 		/>
 
 		<Listing 
-			date="March 2013—June 2016"
+			startDate="March 2013"
+			endDate="June 2016"
 			jobTitles={["Web Designer, Partner"]}
 			company="Chiselbox"
 			bullets={[

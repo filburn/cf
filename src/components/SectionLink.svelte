@@ -20,11 +20,12 @@
 }
 
 .section-link {
+  // TODO: fix link hover area
   display: flex;
   align-items: center;
   padding: 0 1rem;
 	font-weight: 700;
-  font-size: 1.17rem;
+  font-size: 1.25rem;
 
   svg {
     transition: cubic-bezier(0.3, 0, .3, 1) 0.15s transform;

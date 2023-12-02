@@ -1,5 +1,6 @@
 <script lang="ts">
-  export let date:string = "";
+  export let startDate:string = "";
+  export let endDate:string = "";
   export let jobTitles:string[] = [];
   export let projectTitle:string = "";
   export let company:string = "";
@@ -11,13 +12,13 @@
 </script>
 
   <li>
-    {#if date != '' && img == ''}
-      <time>{date}</time>
-      {:else if img != '' && alt != '' && date == ''}
+    {#if startDate != '' && endDate != '' && img == ''}
+      <time>{startDate}—{endDate}</time>
+      {:else if img != '' && alt != '' && startDate == '' && endDate == ''}
       <img src="{img}" alt="{alt}"/>
     {/if}
     <div>
-      {#if date != '' && jobTitles.length > 0 && img == ''}
+      {#if startDate != '' && endDate != '' && jobTitles.length > 0 && img == ''}
         <h3>{jobTitles[0] + " at " + company}</h3>
         {#if jobTitles.length > 1}
           {#each jobTitles.slice(1) as _, i}
@@ -53,7 +54,6 @@
     transition: cubic-bezier(0.3, 0, .3, 1) 0.15s all;
     border-radius: 1rem;
     padding: 1rem;
-    font-size: 0.875rem;
     
     &:hover {
       background: rgba(5, 70, 116, 0.5);
@@ -62,6 +62,7 @@
     time,
     img {
       flex: 1;
+      flex-shrink: 0;
       padding-right: 1em;
       min-width: calc(25% - 1em);
       max-width: 100%;
@@ -71,6 +72,7 @@
 
     div {
       flex: 3;
+      flex-shrink: 3;
     }
 
     h3 {
@@ -82,7 +84,7 @@
     opacity: 0.6;
     margin: -0.5rem 0 1rem 0;
     font-weight: 700;
-    font-size: 1.17rem;
+    font-size: 1.25rem;
     }
   }
 
@@ -107,7 +109,7 @@
       background-color: rgb(var(--color-bg-2));
       padding: 0.25rem 0.5rem;
       color: rgb(var(--color-theme-1));
-      font-size: 0.75rem;
+      font-size: 0.875rem;
     }
   }
 </style>
