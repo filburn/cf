@@ -95,4 +95,10 @@
 	h1 {
 		width: 100%;
 	}
+
+	ul {
+		@media (max-width: 38rem) {
+      flex-direction: row;
+    }
+	}
 </style>

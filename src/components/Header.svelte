@@ -41,12 +41,13 @@
 		overflow-x: clip;
 
 		h1, h2 {
+			color: rgba(var(--color-text), 0.95);
 			margin: 0;
 		}
 
 		h1 {
 			font-size: calc(3rem + 4vw);
-			text-shadow: -1px -1px 0 rgb(var(--color-theme-2)), 1px 1px 0 rgb(var(--color-theme-1));
+			text-shadow: -1px -1px 0 rgb(var(--color-theme-1)), 1px 1px 0 rgb(var(--color-theme-2));
 		}
 
 		h2 {

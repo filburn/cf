@@ -54,6 +54,10 @@
     transition: cubic-bezier(0.3, 0, .3, 1) 0.15s all;
     border-radius: 1rem;
     padding: 1rem;
+
+    @media (max-width: 38rem) {
+      flex-direction: column;
+    }
     
     &:hover {
       background: rgba(5, 70, 116, 0.5);
@@ -68,6 +72,10 @@
       max-width: 100%;
       height: 100%;
       overflow: auto;
+
+      @media (max-width: 38rem) {
+        padding-bottom: 1em;
+      }
     }
 
     div {
