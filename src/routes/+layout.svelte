@@ -5,11 +5,6 @@
 </script>
 
 <div class="app">
-	<Header
-		name="Caleb Filburn"
-		title="Designer + Software Engineer"
-		description="I’m a digital product expert who loves design, development, and empowering collaborative teams to craft exceptional products."
-	/>
 
 	<main>
 		<slot />
@@ -31,7 +26,7 @@
 		flex-direction: column;
 		box-sizing: border-box;
 		margin: 0 auto;
-		padding: 1rem;
+		padding: 0 1rem;
 		width: 100%;
 		max-width: 64rem;
 	}

@@ -1,4 +1,5 @@
 <script>
+	import Header from '$components/Header.svelte';
 	import Listing from '$components/Listing.svelte';
 	import cmmi from '$lib/images/cmmi-design-thumb.png';
 	import isaca from '$lib/images/isaca-design-thumb.png';
@@ -9,6 +10,12 @@
 	<title>Caleb Filburn - Designer + Software Engineer</title>
 	<meta name="description" content="Designer and software engineer with 10+ years of experience creating products and building teams." />
 </svelte:head>
+
+<Header
+name="Caleb Filburn"
+title="Designer + Software Engineer"
+description="I’m a digital product expert who loves design, development, and empowering collaborative teams to craft exceptional products."
+/>
 
 <section class="experience">
 	<h1 class="sr-only">Experience</h1>
