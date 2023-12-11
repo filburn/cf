@@ -23,6 +23,7 @@ body {
 	background-attachment: fixed;
 	background-color: rgb(var(--color-bg-1));
 	min-height: 100vh;
+	overflow-x: clip;
 }
 
 section {
@@ -33,6 +34,10 @@ section {
 	padding: 0 2em;
 	max-width: 60em;
 	margin-bottom: 6rem;
+
+	&:first-of-type {
+		margin-top: 6rem;
+	}
 
 	@media (min-width: 60rem) {
 		padding: 0 calc(50% - 30em);

@@ -3,12 +3,24 @@
 	import Listing from '$components/Listing.svelte';
 	import cmmi from '$lib/images/cmmi-design-thumb.png';
 	import isaca from '$lib/images/isaca-design-thumb.png';
+	import meta from '$lib/images/cf-meta-img.png';
 	import SectionLink from '$components/SectionLink.svelte';
 </script>
 
 <svelte:head>
 	<title>Caleb Filburn - Designer + Software Engineer</title>
+	<meta name="title" content="Caleb Filburn - Designer + Software Engineer" />
 	<meta name="description" content="Designer and software engineer with 10+ years of experience creating products and building teams." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://calebfilburn.com" />
+	<meta property="og:title" content="Caleb Filburn - Designer + Software Engineer" />
+	<meta property="og:description" content="Designer and software engineer with 10+ years of experience creating products and building teams." />
+	<meta property="og:image" content="{meta}" />
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://calebfilburn.com" />
+	<meta property="twitter:title" content="Caleb Filburn - Designer + Software Engineer" />
+	<meta property="twitter:description" content="Designer and software engineer with 10+ years of experience creating products and building teams." />
+	<meta property="twitter:image" content="{meta}" />
 </svelte:head>
 
 <Header
@@ -25,7 +37,7 @@ description="I’m a digital product expert who loves design, development, and e
 			endDate="August 2023"
 			jobTitles={["Software Engineer", "UX Engineer"]}
 			company="ISACA"
-			description={["Designed and developed design system components. Delivered high-quality production code for B2C enterprise software applications. Led qualitative and quantitative usability testing. Facilitated meetings, mentored new hires, and presented projects and findings to stakeholders."]}
+			description={["Wrote code to create design system components. Delivered high-quality production code for B2C enterprise software applications. Led qualitative and quantitative usability testing. Facilitated meetings, mentored new hires, and presented projects and findings to stakeholders."]}
 			tags={["React", "Angular", "SCSS", ".NET", "Azure", "SQL", "UX Design", "Figma", "Sitecore", "Kentico", "Salesforce", "Scrum"]}
 		/>
 
@@ -34,7 +46,7 @@ description="I’m a digital product expert who loves design, development, and e
 			endDate="March 2020"
 			jobTitles={["Frontend Developer"]}
 			company="CMMI Institute"
-			description={["Worked closely with UX team to realize new frontend components. Wrote and maintained design system and implementation guidelines. Performed A/B testing, card sorting, and user interviews. Maintained codebase for a suite of B2B applications."]}
+			description={["Worked closely with UX team to realize new frontend components. Wrote and maintained design system and implementation guidelines. Performed A/B testing, card sorting, and user interviews. Developed new products and features while maintaining codebase for a suite of B2B applications."]}
 			tags={["JavaScript", "React", "SCSS", ".NET", "SQL", "UX Design", "Figma", "Kentico", "Scrum"]}
 		/>
 
@@ -43,7 +55,7 @@ description="I’m a digital product expert who loves design, development, and e
 			endDate="July 2018"
 			jobTitles={["Web Team Director"]}
 			company="Em-Media"
-			description={["Managed development and DevOps for a portfolio of web applications at an agency. Coordinated work with a team of developers and content specialists."]}
+			description={["Oversaw development and DevOps for a portfolio of web applications at an agency. Coordinated work with a team of developers and content specialists."]}
 			tags={["JavaScript", "HTML5", "CSS3", "Project Management", "HubSpot", "WordPress"]}
 		/>
 
@@ -52,7 +64,8 @@ description="I’m a digital product expert who loves design, development, and e
 			endDate="June 2016"
 			jobTitles={["Web Designer, Partner"]}
 			company="Chiselbox"
-			description={["Co-founded boutique web and creative agency. Managed clients, budgets, and timelines while developing and delivering quality websites."]}
+			description={["Co-founded boutique web and creative agency. Managed clients, budgets, and timelines while developing and delivering quality websites.",
+			"Met with clients, wrote project proposals, and managed finances for the agency."]}
 			tags={["JavaScript", "HTML5", "CSS3", "Ruby", "PHP", "WordPress", "Drupal"]}
 		/>
 	</ul>
@@ -80,7 +93,7 @@ description="I’m a digital product expert who loves design, development, and e
 		alt="a screenshot of the CMMI Institute design system"
 		projectTitle="CMMI Institute Design System"
 		description={["A design system created to maintain consistent visuals and functionality within internal and external web applications.",
-		"Contains over 100 artifact, each with example code that can be used to quickly add it to a page."]}
+		"Contains over 100 artifacts, each with example code that can be used to quickly add it to a page."]}
 		tags={["React", "TypeScript", "Node.js", "SCSS", "Jest"]}
 		/>
 	</ul>

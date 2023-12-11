@@ -47,6 +47,10 @@
 		h1 {
 			font-size: calc(3rem + 4vw);
 			text-shadow: -1px -1px 0 rgb(var(--color-theme-1)), 1px 1px 0 rgb(var(--color-theme-2));
+
+			@media (min-width: 160rem) {
+				font-size: 9.5rem;
+			}
 		}
 
 		h2 {
@@ -61,6 +65,9 @@
 
 	.grid {
 
+		background-clip: content-box;
+		max-width: fit-content;
+
 		&:after {
 			-webkit-mask-image: -webkit-gradient(linear, left 90%, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
 			-webkit-background-clip: content-box;
@@ -72,18 +79,17 @@
 			left: 0;
 			transform: perspective(400px) rotateX(40deg) scale(2,1) translateZ(0);
 			transform-origin: bottom center; 
-			z-index: -1; 
-			backface-visibility: hidden; 
-			mask-image: gradient(linear, left 90%, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+			z-index: -1;
+			backface-visibility: hidden;
+			mask-image: gradient(linear, left 90%, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0))); 
 			will-change: transform;
 			outline: 1px solid transparent;
 			background-image: 
 			linear-gradient(to right, rgb(var(--color-theme-2)) 2px, transparent 2px), 
 			linear-gradient(to bottom, rgb(var(--color-theme-2)) 1px, transparent 2px); 
 			background-position: center bottom;
-			background-size: 40px 40px;
+			background-size: 40px 40px; 
 			background-clip: content-box;
-			padding: 1px;
 			width: 100%;
 			height: 100vh;
 			content: "";
@@ -97,8 +103,10 @@
 
 	#cover {
 		position: absolute;
-		left: 0; top: 0;
-		width: 100%; height: 100vh;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100vh;
 		transform-origin: 0 50%;
 		animation: coverElement auto linear;
 		animation-timeline: scroll();
