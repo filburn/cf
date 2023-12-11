@@ -31,18 +31,17 @@
 
   a {
     display: inline-flex;
-    transition: cubic-bezier(0.3, 0, .3, 1) 0.15s text-decoration;
-    text-decoration: underline;
-    text-decoration-color: transparent;
-    text-underline-offset: 0.33rem;
+    transition: cubic-bezier(0.3, 0, .3, 1) 0.15s all;
+    text-decoration: none;
     padding: 1rem 1.25rem;
-    background: rgb(var(--color-theme-1));
+    background: linear-gradient(90deg, rgb(var(--color-theme-2)) 50%, rgb(var(--color-theme-1)) 50%);
+    background-position: 100%;
+    background-size: 202%;
     color: rgb(var(--color-bg-1));
     border-radius: 0.33rem;
 
     &:hover {
-      text-decoration: underline;
-      text-decoration-color: rgb(var(--color-theme-2));
+      background-position: 0;
 
     svg {
       transform: translate(5px);

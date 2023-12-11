@@ -25,7 +25,7 @@ description="I’m a digital product expert who loves design, development, and e
 			endDate="August 2023"
 			jobTitles={["Software Engineer", "UX Engineer"]}
 			company="ISACA"
-			description={["Designed and developed design system components. Delivered high-quality production code for enterprise software applications. Performed user interviews and qualitative data analysis. Led meetings and presentations, mentored new hires, and reported project status to stakeholders."]}
+			description={["Designed and developed design system components. Delivered high-quality production code for B2C enterprise software applications. Led qualitative and quantitative usability testing. Facilitated meetings, mentored new hires, and presented projects and findings to stakeholders."]}
 			tags={["React", "Angular", ".NET", "Azure", "SQL", "Figma", "Kentico", "Sitecore", "Salesforce", "Scrum"]}
 		/>
 
@@ -34,7 +34,7 @@ description="I’m a digital product expert who loves design, development, and e
 			endDate="March 2020"
 			jobTitles={["Frontend Developer"]}
 			company="CMMI Institute"
-			description={["Developed new components for company design system. Performed A/B testing, card sorting, and user interviews. Maintained codebase for a suite of B2B applications."]}
+			description={["Worked closely with UX team to realize new frontend components. Wrote and maintained design system and implementation guidelines. Performed A/B testing, card sorting, and user interviews. Maintained codebase for a suite of B2B applications."]}
 			tags={["JavaScript", "React", ".NET", "SQL", "Figma", "Kentico", "Scrum"]}
 		/>
 
@@ -43,8 +43,8 @@ description="I’m a digital product expert who loves design, development, and e
 			endDate="July 2018"
 			jobTitles={["Web Team Director"]}
 			company="Em-Media"
-			description={[""]}
-			tags={["software", "design", "etc"]}
+			description={["Managed development and DevOps for a portfolio of web applications at an agency. Coordinated work with a team of developers and content specialists."]}
+			tags={["JavaScript", "HTML5", "CSS3", "Project Management", "HubSpot", "WordPress"]}
 		/>
 
 		<Listing 
@@ -52,13 +52,8 @@ description="I’m a digital product expert who loves design, development, and e
 			endDate="June 2016"
 			jobTitles={["Web Designer, Partner"]}
 			company="Chiselbox"
-			bullets={[
-				"Co-founded boutique web and creative agency",
-				"Guided new business development, business strategy, and financial decisions",
-				"Supervised website development and provided creative direction in fast-paced startup environment",
-				"Created web components, identity systems, and branding assets for 20+ clients"
-			]}
-			tags={["software", "design", "etc"]}
+			description={["Co-founded boutique web and creative agency. Managed clients, budgets, and timelines while developing and delivering quality websites."]}
+			tags={["JavaScript", "HTML5", "CSS3", "Ruby", "PHP", "WordPress", "Drupal"]}
 		/>
 	</ul>
 

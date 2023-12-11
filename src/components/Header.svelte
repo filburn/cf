@@ -91,19 +91,18 @@
 	}
 
 	@keyframes coverElement {
-		from { opacity: (0); }
-		to { opacity: (1); }
+		from { background: transparent; }
+		to { background: rgb(var(--color-bg-1)); }
 	}
 
 	#cover {
 		position: absolute;
 		left: 0; top: 0;
 		width: 100%; height: 100vh;
-		background: rgb(var(--color-bg-1));
 		transform-origin: 0 50%;
 		animation: coverElement auto linear;
 		animation-timeline: scroll();
-		animation-range: 0 exit 80%;
+		animation-range: entry 30vh exit 100vh;
 	}
 
 </style>
