@@ -4,6 +4,7 @@
 	import cmmi from '$lib/images/cmmi-design-thumb.png';
 	import isaca from '$lib/images/isaca-design-thumb.png';
 	import meta from '$lib/images/cf-meta-img.png';
+	import resume from '$lib/docs/filburn-resume-2023.pdf';
 	import SectionLink from '$components/SectionLink.svelte';
 </script>
 
@@ -72,7 +73,7 @@ description="I’m a digital product expert who loves design, development, and e
 
 	<SectionLink
 		text="See full resume"
-		link="#"
+		link="{resume}"
 	/>
 
 </section>
