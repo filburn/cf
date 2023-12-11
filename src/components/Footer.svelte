@@ -1,5 +1,5 @@
 <footer>
-  <p>&copy;</p>
+  <p></p>
 </footer>
 
 <style lang="scss">

@@ -10,7 +10,7 @@
 		<slot />
 	</main>
 
-	<Footer />
+	<!--<Footer />-->
 </div>
 
 <style lang="scss">

@@ -26,7 +26,7 @@ description="I’m a digital product expert who loves design, development, and e
 			jobTitles={["Software Engineer", "UX Engineer"]}
 			company="ISACA"
 			description={["Designed and developed design system components. Delivered high-quality production code for B2C enterprise software applications. Led qualitative and quantitative usability testing. Facilitated meetings, mentored new hires, and presented projects and findings to stakeholders."]}
-			tags={["React", "Angular", ".NET", "Azure", "SQL", "Figma", "Kentico", "Sitecore", "Salesforce", "Scrum"]}
+			tags={["React", "Angular", "SCSS", ".NET", "Azure", "SQL", "UX Design", "Figma", "Sitecore", "Kentico", "Salesforce", "Scrum"]}
 		/>
 
 		<Listing 
@@ -35,7 +35,7 @@ description="I’m a digital product expert who loves design, development, and e
 			jobTitles={["Frontend Developer"]}
 			company="CMMI Institute"
 			description={["Worked closely with UX team to realize new frontend components. Wrote and maintained design system and implementation guidelines. Performed A/B testing, card sorting, and user interviews. Maintained codebase for a suite of B2B applications."]}
-			tags={["JavaScript", "React", ".NET", "SQL", "Figma", "Kentico", "Scrum"]}
+			tags={["JavaScript", "React", "SCSS", ".NET", "SQL", "UX Design", "Figma", "Kentico", "Scrum"]}
 		/>
 
 		<Listing 
@@ -68,20 +68,20 @@ description="I’m a digital product expert who loves design, development, and e
 	<h1 class="sr-only">Projects</h1>
 	<ul>
 		<Listing
-			img={cmmi}
-			alt="a screenshot of the CMMI Institute design system"
-			projectTitle="CMMI Institute Design System"
-			description={["Design system.",
-			"Every artifact has a sample HTML snippet that can be used to quickly add it to a page. When an update to a component or style is needed, changing it in the design system will update it everywhere else."]}
-			tags={["React", "that", "something else"]}
-		/>
-		<Listing
 			img={isaca}
 			alt="a screenshot of the ISACA design operations framework"
 			projectTitle="ISACA Design Operations Framework"
-			description={["Design system.",
-			"Every artifact has a sample HTML snippet that can be used to quickly add it to a page. When an update to a component or style is needed, changing it in the design system will update it everywhere else."]}
-			tags={["React", "that", "something else"]}
+			description={["Design system created to enhance consistency across web properties and increase development efficiency.",
+			"Accompanying documentation includes component previews, instructions for use, and sample code snippets."]}
+			tags={["React", "TypeScript", "Node.js", "SCSS", "Jest"]}
+		/>
+		<Listing
+		img={cmmi}
+		alt="a screenshot of the CMMI Institute design system"
+		projectTitle="CMMI Institute Design System"
+		description={["A design system created to maintain consistent visuals and functionality within internal and external web applications.",
+		"Contains over 100 artifact, each with example code that can be used to quickly add it to a page."]}
+		tags={["React", "TypeScript", "Node.js", "SCSS", "Jest"]}
 		/>
 	</ul>
 </section>
