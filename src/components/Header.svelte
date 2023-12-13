@@ -28,6 +28,11 @@
 </header>
 
 <style lang="scss">
+@keyframes fadeOut {
+		from { opacity: 1; }
+		to { opacity: 0; }
+	}
+
   header {
     width: 100%;
     min-height: 100vh;
@@ -36,6 +41,9 @@
 		align-items: center;
 		display: flex;
 		overflow-x: hidden;
+		animation: fadeOut auto linear;
+		animation-timeline: scroll();
+		animation-range: entry 30vh exit 100vh;
 
 		h1, h2 {
 			color: rgba(var(--color-text), 0.95);
