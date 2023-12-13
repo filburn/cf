@@ -20,7 +20,6 @@
 
 <header>
 	<div class="grid"></div>
-	<div id="cover"></div>
 	<div itemscope itemtype="http://schema.org/Person">
 		<h1 itemprop="name">{name}</h1>
 		<h2 itemprop="jobTitle">{title}</h2>
@@ -36,8 +35,7 @@
 		justify-content: center;
 		align-items: center;
 		display: flex;
-		flex-direction: column;
-		overflow-x: clip;
+		overflow-x: hidden;
 
 		h1, h2 {
 			color: rgba(var(--color-text), 0.95);
@@ -95,22 +93,4 @@
 			content: "";
 		}
 	}
-
-	@keyframes coverElement {
-		from { background: transparent; }
-		to { background: rgb(var(--color-bg-1)); }
-	}
-
-	#cover {
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100vh;
-		transform-origin: 0 50%;
-		animation: coverElement auto linear;
-		animation-timeline: scroll();
-		animation-range: entry 30vh exit 100vh;
-	}
-
 </style>
