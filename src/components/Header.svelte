@@ -35,8 +35,7 @@
 		justify-content: center;
 		align-items: center;
 		display: flex;
-		flex-direction: column;
-		overflow-x: clip;
+		overflow-x: hidden;
 
 		h1, h2 {
 			color: rgba(var(--color-text), 0.95);
