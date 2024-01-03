@@ -10,17 +10,17 @@
 </script>
 
 <svelte:head>
-	<title>Caleb Filburn - Designer + Software Engineer</title>
-	<meta name="title" content="Caleb Filburn - Designer + Software Engineer" />
+	<title>Caleb Filburn - UX/UI Engineer</title>
+	<meta name="title" content="Caleb Filburn - UX/UI Engineer" />
 	<meta name="description" content="Designer and software engineer with 10+ years of experience creating products and building teams." />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://calebfilburn.com" />
-	<meta property="og:title" content="Caleb Filburn - Designer + Software Engineer" />
+	<meta property="og:title" content="Caleb Filburn - UX/UI Engineer" />
 	<meta property="og:description" content="Designer and software engineer with 10+ years of experience creating products and building teams." />
 	<meta property="og:image" content="{meta}" />
 	<meta property="twitter:card" content="summary_large_image" />
 	<meta property="twitter:url" content="https://calebfilburn.com" />
-	<meta property="twitter:title" content="Caleb Filburn - Designer + Software Engineer" />
+	<meta property="twitter:title" content="Caleb Filburn - UX/UI Engineer" />
 	<meta property="twitter:description" content="Designer and software engineer with 10+ years of experience creating products and building teams." />
 	<meta property="twitter:image" content="{meta}" />
 </svelte:head>
