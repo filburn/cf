@@ -67,15 +67,19 @@
     img {
       flex: 1;
       flex-shrink: 0;
-      padding-right: 1em;
+      margin: 0 1em 0 0;
       min-width: calc(25% - 1em);
       max-width: 100%;
       height: 100%;
       overflow: auto;
 
       @media (max-width: 38rem) {
-        padding-bottom: 1em;
+        margin: 0 0 1em 0;
       }
+    }
+
+    img {
+      border: 2px solid rgb(var(--color-bg-2));
     }
 
     div {

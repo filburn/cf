@@ -3,6 +3,7 @@
 	import Listing from '$components/Listing.svelte';
 	import cmmi from '$lib/images/cmmi-design-thumb.png';
 	import isaca from '$lib/images/isaca-design-thumb.png';
+	import cf from '$lib/images/cf-thumb.png';
 	import meta from '$lib/images/cf-meta-img.png';
 	import resume from '$lib/docs/filburn-resume-2023.pdf';
 	import SectionLink from '$components/SectionLink.svelte';
@@ -26,7 +27,7 @@
 
 <Header
 name="Caleb Filburn"
-title="Designer + Software Engineer"
+title="UX/UI Engineer"
 description="I’m a digital product expert who loves design, development, and empowering collaborative teams to craft exceptional products."
 />
 
@@ -36,7 +37,7 @@ description="I’m a digital product expert who loves design, development, and e
 		<Listing 
 			startDate="March 2020"
 			endDate="August 2023"
-			jobTitles={["Software Engineer", "UX Engineer"]}
+			jobTitles={["UX/UI Engineer", "UX Engineer", "Frontend Engineer"]}
 			company="ISACA"
 			description={["Wrote code to create design system components. Delivered high-quality production code for B2C enterprise software applications. Led qualitative and quantitative usability testing. Facilitated meetings, mentored new hires, and presented projects and findings to stakeholders."]}
 			tags={["React", "Angular", "SCSS", ".NET", "Azure", "SQL", "UX Design", "Figma", "Sitecore", "Kentico", "Salesforce", "Scrum"]}
@@ -87,15 +88,22 @@ description="I’m a digital product expert who loves design, development, and e
 			projectTitle="ISACA Design Operations Framework"
 			description={["Design system created to enhance consistency across web properties and increase development efficiency.",
 			"Accompanying documentation includes component previews, instructions for use, and sample code snippets."]}
-			tags={["React", "TypeScript", "Node.js", "SCSS", "Jest"]}
+			tags={["React", "TypeScript", "Webpack", "Node.js", "SCSS", "Jest"]}
 		/>
 		<Listing
 		img={cmmi}
 		alt="a screenshot of the CMMI Institute design system"
 		projectTitle="CMMI Institute Design System"
 		description={["A design system created to maintain consistent visuals and functionality within internal and external web applications.",
-		"Contains over 100 artifacts, each with example code that can be used to quickly add it to a page."]}
-		tags={["React", "TypeScript", "Node.js", "SCSS", "Jest"]}
+		"Contains over 100 components, each with example code that can be used to quickly add it to a page."]}
+		tags={["React", "TypeScript", "Webpack", "Node.js", "SCSS", "Jest"]}
+		/>
+		<Listing
+			img={cf}
+			alt="a screenshot of this website; Caleb Filburn's personal website"
+			projectTitle="Personal Website"
+			description={["A website showcasing my skills and professional experience along with some projects I've worked on. A summary of my varied experience as a designer, developer, and engineer."]}
+			tags={["Svelte", "TypeScript", "Vite", "Node.js", "SCSS", "Playwright"]}
 		/>
 	</ul>
 </section>
