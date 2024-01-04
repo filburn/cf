@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { onMount } from "svelte";
 
-  export let name:string;
-  export let title:string;
-	export let description:string;
+  export let name:string = "";
+  export let title:string = "";
+	export let description:string= "";
 	
 	onMount(() => {
 		document.addEventListener('scroll', function() {

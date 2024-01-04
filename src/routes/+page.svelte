@@ -1,5 +1,5 @@
-<script>
-	import Header from '$components/Header.svelte';
+<script lang="ts">
+	import HeroHeader from '$components/HeroHeader.svelte';
 	import Listing from '$components/Listing.svelte';
 	import cmmi from '$lib/images/cmmi-design-thumb.png';
 	import isaca from '$lib/images/isaca-design-thumb.png';
@@ -25,7 +25,7 @@
 	<meta property="twitter:image" content="{meta}" />
 </svelte:head>
 
-<Header
+<HeroHeader
 name="Caleb Filburn"
 title="UX/UI Engineer"
 description="I’m a digital product expert who loves design, development, and empowering collaborative teams to craft exceptional products."

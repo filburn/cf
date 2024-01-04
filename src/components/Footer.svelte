@@ -1,11 +1,12 @@
 <footer>
-  <p></p>
+  <p>|||</p>
 </footer>
 
 <style lang="scss">
 	footer {
 		display: flex;
 		flex-direction: column;
+		font-size: 0.75rem;
 		justify-content: center;
 		align-items: center;
     padding: 0 1rem;
