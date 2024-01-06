@@ -134,6 +134,10 @@ ul, ol {
 li {
 	margin: 1rem 0;
 	hanging-punctuation: first;
+
+	& > ul, ol {
+		margin: 0 0 0 1.5rem;
+	}
 }
 
 button:focus:not(:focus-visible) {
