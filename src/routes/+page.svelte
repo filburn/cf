@@ -5,7 +5,6 @@
 	import isaca from '$lib/images/isaca-design-thumb.png';
 	import cf from '$lib/images/cf-thumb.png';
 	import meta from '$lib/images/cf-meta-img.png';
-	import resume from '$lib/docs/filburn-resume-2023.pdf';
 	import SectionLink from '$components/SectionLink.svelte';
 </script>
 
@@ -48,7 +47,7 @@ description="I’m a digital product expert who loves design, development, and e
 			endDate="March 2020"
 			jobTitles={["Frontend Developer"]}
 			company="CMMI Institute"
-			description={["Worked closely with UX team to realize new frontend components. Wrote and maintained design system and implementation guidelines. Performed A/B testing, card sorting, and user interviews. Developed new products and features while maintaining codebase for a suite of B2B applications."]}
+			description={["Created new UI components and frontend features. Wrote and maintained design system code and implementation guidelines. Performed A/B testing, card sorting, and user interviews. Developed new products and features while maintaining codebase for a suite of B2B applications."]}
 			tags={["JavaScript", "React", "SCSS", ".NET", "SQL", "UX Design", "Figma", "Kentico", "Scrum"]}
 		/>
 
@@ -73,8 +72,8 @@ description="I’m a digital product expert who loves design, development, and e
 	</ul>
 
 	<SectionLink
-		text="See full resume"
-		link="{resume}"
+		text="See my Manual"
+		link="https://app.manual.me/@sirsloth"
 	/>
 
 </section>
