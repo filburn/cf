@@ -26,6 +26,17 @@ body {
 	overflow-x: clip;
 }
 
+main {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 0 1rem;
+	width: 100%;
+	max-width: 64rem;
+}
+
 section {
 	display: flex;
 	flex: 0.6;
@@ -123,6 +134,10 @@ ul, ol {
 li {
 	margin: 1rem 0;
 	hanging-punctuation: first;
+
+	& > ul, ol {
+		margin: 0 0 0 1.5rem;
+	}
 }
 
 button:focus:not(:focus-visible) {

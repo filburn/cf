@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { onMount } from "svelte";
 
-  export let name:string;
-  export let title:string;
-	export let description:string;
+  export let name:string = "";
+  export let title:string = "";
+	export let description:string= "";
 	
 	onMount(() => {
 		document.addEventListener('scroll', function() {
@@ -90,6 +90,7 @@
 			mask-image: gradient(linear, left 90%, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0))); 
 			will-change: transform;
 			outline: 1px solid transparent;
+			border-bottom: 2px solid rgb(var(--color-theme-2));
 			background-image: 
 			linear-gradient(to right, rgb(var(--color-theme-2)) 2px, transparent 2px), 
 			linear-gradient(to bottom, rgb(var(--color-theme-2)) 1px, transparent 2px); 

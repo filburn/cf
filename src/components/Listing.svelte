@@ -12,20 +12,20 @@
 </script>
 
   <li>
-    {#if startDate != '' && endDate != '' && img == ''}
+    {#if startDate !== '' && endDate !== '' && img === ''}
       <time>{startDate}—{endDate}</time>
-      {:else if img != '' && alt != '' && startDate == '' && endDate == ''}
+      {:else if img !== '' && alt !== '' && startDate === '' && endDate === ''}
       <img src="{img}" alt="{alt}"/>
     {/if}
     <div>
-      {#if startDate != '' && endDate != '' && jobTitles.length > 0 && img == ''}
+      {#if startDate !== '' && endDate !== '' && jobTitles.length > 0 && img === ''}
         <h3>{jobTitles[0] + " at " + company}</h3>
         {#if jobTitles.length > 1}
           {#each jobTitles.slice(1) as _, i}
             <span>{jobTitles[i+1]}</span>
           {/each}
         {/if}
-      {:else if jobTitles.length == 0 && projectTitle != ''}
+      {:else if jobTitles.length === 0 && projectTitle !== ''}
         <h3>{projectTitle}</h3>
       {/if}
       {#if description}
@@ -67,21 +67,24 @@
     img {
       flex: 1;
       flex-shrink: 0;
-      padding-right: 1em;
+      margin: 0 1em 0 0;
       min-width: calc(25% - 1em);
       max-width: 100%;
       height: 100%;
       overflow: auto;
 
       @media (max-width: 38rem) {
-        padding-bottom: 1em;
+        margin: 0 0 1em 0;
       }
+    }
+
+    img {
+      border: 2px solid rgb(var(--color-bg-2));
     }
 
     div {
       flex: 3;
-      flex-shrink: 3;
-    }
+		}
 
     h3 {
       margin-top: 0;
