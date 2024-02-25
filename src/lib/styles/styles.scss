@@ -64,10 +64,11 @@ p {
 a {
 	cursor: pointer;
 	color: rgba(var(--color-text), 0.9); 
+	text-decoration: none;
 }
 
 a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 	text-decoration-color: rgb(var(--color-theme-2));
 }
 
