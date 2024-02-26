@@ -6,7 +6,6 @@
 </script>
 
 <footer>
-  <p>|||</p>
 	<div class="social-icons">
 		<a href="https://www.behance.net/calebfilburn">{@html behance}</a>
 		<a href="https://github.com/filburn">{@html github}</a>
@@ -26,7 +25,7 @@
 
 		.social-icons {
 			display: flex;
-			margin: 1rem 0 2rem;;
+			margin: 4rem 0;
 
 			a {
 				margin: 0 1rem;
