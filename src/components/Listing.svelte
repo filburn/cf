@@ -13,7 +13,7 @@
 
   <li>
     {#if startDate !== '' && endDate !== '' && img === ''}
-      <time>{startDate}—{endDate}</time>
+      <time>{startDate} – {endDate}</time>
       {:else if img !== '' && alt !== '' && startDate === '' && endDate === ''}
       <img src="{img}" alt="{alt}"/>
     {/if}

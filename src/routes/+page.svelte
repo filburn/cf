@@ -81,22 +81,28 @@ description="I’m a digital product expert who loves design, development, and e
 <section class="projects">
 	<h1 class="sr-only">Projects</h1>
 	<ul>
-		<Listing
-			img={isaca}
-			alt="a screenshot of the ISACA design operations framework"
-			projectTitle="ISACA Design Operations Framework"
-			description={["Design system created to enhance consistency across web properties and increase development efficiency.",
-			"Accompanying documentation includes component previews, instructions for use, and sample code snippets."]}
+		<a href="https://www.behance.net/gallery/162518351/ISACA-Design-Operations-Framework" rel="noopener noreferrer" aria-label="View the ISACA design operations framework on Behance">
+			<Listing
+				img={isaca}
+				alt="a screenshot of the ISACA design operations framework"
+				projectTitle="ISACA Design Operations Framework"
+				description={["Design system created to enhance consistency across web properties and increase development efficiency.",
+				"Accompanying documentation includes component previews, instructions for use, and sample code snippets."]}
+				tags={["React", "TypeScript", "Webpack", "Node.js", "SCSS", "Jest"]}
+			/>
+	</a>
+
+		<a href="https://www.behance.net/gallery/157084899/CMMI-Institute-Design-System" rel="noopener noreferrer" aria-label="View the CMMI Institute design system on Behance">
+			<Listing
+			img={cmmi}
+			alt="a screenshot of the CMMI Institute design system"
+			projectTitle="CMMI Institute Design System"
+			description={["A design system created to maintain consistent visuals and functionality within internal and external web applications.",
+			"Contains over 100 components, each with example code that can be used to quickly add it to a page."]}
 			tags={["React", "TypeScript", "Webpack", "Node.js", "SCSS", "Jest"]}
-		/>
-		<Listing
-		img={cmmi}
-		alt="a screenshot of the CMMI Institute design system"
-		projectTitle="CMMI Institute Design System"
-		description={["A design system created to maintain consistent visuals and functionality within internal and external web applications.",
-		"Contains over 100 components, each with example code that can be used to quickly add it to a page."]}
-		tags={["React", "TypeScript", "Webpack", "Node.js", "SCSS", "Jest"]}
-		/>
+			/>
+		</a>
+
 		<Listing
 			img={cf}
 			alt="a screenshot of this website; Caleb Filburn's personal website"
