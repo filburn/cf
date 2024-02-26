@@ -10,9 +10,9 @@ test('main heading exists', async ({ page }) => {
 	await expect(page.getByRole('heading', { name: 'Caleb Filburn' })).toBeVisible();
 });
 
-test('resume link', async ({ page }) => {
+test('manual link', async ({ page }) => {
 	await page.goto('/');
-	await expect(page.getByRole('link', { name: 'See full resume' })).toBeVisible();
+	await expect(page.getByRole('link', { name: 'See my Manual' })).toBeVisible();
 });
 
 test('experience heading exists', async ({ page }) => {
